@@ -1,0 +1,16 @@
+#como-funciona{
+    margin: 100px 0;
+}
+
+#como-funciona h2{
+    font-size: 48px;
+}
+
+#como-funciona p{
+    line-height: 30px;
+    margin-bottom: 26px;
+}
+
+#como-funciona .btn{
+    padding: 10px 36px;
+}
