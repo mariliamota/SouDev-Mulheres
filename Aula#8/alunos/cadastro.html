@@ -28,7 +28,7 @@
         </div>
 
         <div class="col">
-            <form action="" method="post" onsubmit="validar()">
+            <form action="" method="post" onsubmit="salvarAluno()">
                  <!--method é um modo de segurança, usa-se o post para no formulario não aparecer dados sensiveis-->
                 <label for="nome">Nome</label>
                 <input onkeyup="alterarNome()" id="nome" type="text" class="form-control mb-3" placeholder="Digite seu nome completo">
@@ -51,6 +51,7 @@
     </section>
 
     <script src="js/darkmode.js"></script>
+    <script src="js/alunoController.js"></script>
     <script src="js/eventos.js"></script>
 </body>
 </html>
