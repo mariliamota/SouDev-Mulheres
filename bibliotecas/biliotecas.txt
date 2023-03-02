@@ -1,0 +1,51 @@
+////////////////////////////////////////////////////////////////
+Palheta de Cores
+>Coolors:
+https://coolors.co
+
+////////////////////////////////////////////////////////////////
+Banco de imagens:
+>freepik
+https://br.freepik.com
+
+>pexels
+https://www.pexels.com/pt-br/
+
+>pixabay
+https://pixabay.com/pt/
+
+>undraw
+https://undraw.co/illustrations
+
+>Absurd Design
+https://absurd.design/
+
+>IconScout
+https://iconscout.com/paper-illustrations
+
+>Open Doodles
+https://www.opendoodles.com/
+
+////////////////////////////////////////////////////////////////
+Onde estudar CSS:
+https://www.w3schools.com/cssref/index.php
+
+////////////////////////////////////////////////////////////////
+Para icones:
+https://fontawesome.com/icons >> https://cdnjs.com/libraries/font-awesome (esse para linkar)
+
+////////////////////////////////////////////////////////////////
+Para fontes:
+https://fonts.google.com
+
+////////////////////////////////////////////////////////////////
+Biblioteca para css:
+>Bootstrap5: 
+https://getbootstrap.com/
+
+>Materialize:
+https://materializecss.com/
+
+////////////////////////////////////////////////////////////////
+Para animações no css:
+https://animate.style/
