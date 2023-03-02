@@ -30,7 +30,7 @@ function salvarAluno(){
         telefone: tel.value,
         cidade: cidade.value
     }
-    alunos.push(aluno);
+    alunos.push(aluno);                                                     //array.push adiciona no final do array o proximo item
     localStorage.setItem('alunos', JSON.stringify(alunos));
     alert('Adicionado com Sucesso!');
 }
