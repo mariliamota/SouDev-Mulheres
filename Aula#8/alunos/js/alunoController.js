@@ -1,22 +1,26 @@
 //READ
 function listarAlunos(){
 
-    let alunos = JSON.parse(localStorage.getItem('alunos')) || [];
-
-    let tabela = document.getElementById("tabela-body");
-    tabela.innerHTML = "";
-    alunos.forEach((aluno, key) => {
-        tabela.innerHTML += `<tr>
-                                <td>${key}</td>
-                                <td>${aluno.nome}</td>
-                                <td>${aluno.email}</td>
-                                <td>${aluno.telefone}</td>
-                                <td>${aluno.cidade}</td>
-                                <td>
-                                    <button class="btn btn-outline-warning">Editar</button>
-                                    <button class="btn btn-outline-danger" onclick="deletarAluno(${key})">Excluir</button>
-                                </td>
-                            </tr>`;
+    // let alunos = JSON.parse(localStorage.getItem('alunos')) || [];
+    let alunos = [];
+    fetch("http://localhost:8000/alunos")
+    .then(res => res.json())
+    .then(alunos => {
+        let tabela = document.getElementById("tabela-body");
+        tabela.innerHTML = "";
+        alunos.forEach((aluno, key) => {
+            tabela.innerHTML += `<tr>
+                                    <td>${key}</td>
+                                    <td>${aluno.nome}</td>
+                                    <td>${aluno.email}</td>
+                                    <td>${aluno.telefone}</td>
+                                    <td>${aluno.cidade}</td>
+                                    <td>
+                                        <button class="btn btn-outline-warning">Editar</button>
+                                        <button class="btn btn-outline-danger" onclick="deletarAluno(${key})">Excluir</button>
+                                    </td>
+                                </tr>`;
+        })
     })
 }
 
