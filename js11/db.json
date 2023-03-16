@@ -1,0 +1,89 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Calças",
+      "descricao": "Calças em geral"
+    },
+    {
+      "id": 2,
+      "titulo": "Calçados",
+      "descricao": "Calçados em geral"
+    },
+    {
+      "titulo": "Bonés",
+      "descricao": "Boné em geral",
+      "id": 3
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "categoria_id": 2,
+      "tamanho": "41",
+      "codigo": "10982-4",
+      "marca": "ArteSurf",
+      "cor": "Preta",
+      "descricao": "Bota cano alto com zíper. Material: Sintético Estampado Coral Altura do Salto: 8,5 cm. ",
+      "titulo": "Bota cano alto",
+      "valor": 59.9,
+      "qtd": 12,
+      "imagens": [
+        "imagem01.jpg",
+        "imagem02.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "categoria_id": 1,
+      "tamanho": "34",
+      "codigo": "10681-4",
+      "marca": "Shein",
+      "cor": "Branco",
+      "descricao": "O tênis mais tradicional da Converse All Star. Confeccionado em tecido canvas de algodão tipo lona.",
+      "titulo": "Calça Skin",
+      "valor": 45.9,
+      "qtd": 9,
+      "imagens": [
+        "imagem03.jpg",
+        "imagem04.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "categoria_id": 2,
+      "tamanho": "35",
+      "codigo": "10981-4",
+      "marca": "ArteSurf",
+      "cor": "Branco",
+      "descricao": "O tênis mais tradicional da Converse All Star. Confeccionado em tecido canvas de algodão tipo lona.",
+      "titulo": "All star",
+      "valor": 89.9,
+      "qtd": 9,
+      "imagens": [
+        "imagem05.jpg",
+        "imagem06.jpg"
+      ]
+    }
+  ],
+  "clientes": [
+    {
+      "cep": 60510107,
+      "logradouro": "",
+      "numero": 12,
+      "bairro": "",
+      "cidade": "",
+      "uf": "CE",
+      "complemento": "",
+      "email": "marilia.mota90@gmail.com",
+      "pagamento": [
+        {
+          "cartao": 12212,
+          "cvc": 787,
+          "venciment0": 2029,
+          "nome": "Marilia M Lopes"
+        }
+      ]
+    }
+  ]
+}

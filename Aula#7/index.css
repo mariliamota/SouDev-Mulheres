@@ -1,0 +1,88 @@
+body{
+    background-color: #dedede;
+}
+
+.secao-detalhes{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.secao-detalhes article{
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: 20%;
+    display: flex;
+    align-items: center; /*alinhamento vertical*/
+    justify-content: center; /*alinhamento horizontal*/
+    /*align-items e o justify-content so funciona se tiver o display: flex; antes*/
+    transition: 1s;
+    box-shadow: 0px 0px 15px 1px #666; /*usada para fazer sombra em volta de um elemento*/
+}
+
+.secao-detalhes article:hover{
+    color: rgb(29, 183, 170);
+    /*transform: scale(1.2); quando o usuario colocar o curso por cima irá aumentar o ícone*/
+    transition: 1s;
+    transform: scale(1.2) rotate(-60deg);
+}
+
+.secao-detalhes i{
+    font-size: 10rem;
+
+}
+
+/*checkbox estilizados*/
+#sabores{
+    width: 300px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 150px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px #dedede;
+    padding: 16px;
+}
+
+#sabores label{
+    display: block;
+}
+
+#sabores input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    /*border: 2px solid #db4d4d;*/
+}
+
+#sabores input[type="checkbox"]::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #aa00e3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    transition-duration: 200ms;
+}
+
+#sabores input[type="checkbox"]:checked::after{
+    background-color: #aa00e3;
+}
+
+#sabores input[type="checkbox"]::before{
+    content: "";
+    width: 12px;
+    height: 5px;
+    position: absolute;
+    top: calc(50% - 3px);
+    left: calc(50% - 5px);
+    transform: rotate(-45deg);
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    z-index: 1;
+}

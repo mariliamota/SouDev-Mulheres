@@ -1,0 +1,43 @@
+{
+    "bones": [
+        {
+            "azul": [
+                {
+                    "nome": "Nike",
+                    "preco": 299,
+                    "descricao": "ciação da importância da gestão inovadora da qual fazemos parte.",
+                    "imagem": "https://imgnike-a.akamaihd.net/768x768/01292715.jpg"
+                },
+                {
+                    "nome": "Nike",
+                    "preco": 299,
+                    "descricao": "ciação da importância da gestão inovadora da qual fazemos parte.",
+                    "imagem": "https://imgnike-a.akamaihd.net/250x250/02205515.jpg"
+                }
+
+            ]
+        },
+        {
+            "vermelho": [
+                {
+                    "nome": "Nike",
+                    "preco": 299,
+                    "descricao": "ciação da importância da gestão inovadora da qual fazemos parte.",
+                    "imagem": "https://imgnike-a.akamaihd.net/250x250/024410P1.jpg"
+                },
+                {
+                    "nome": "Nike",
+                    "preco": 299,
+                    "descricao": "ciação da importância da gestão inovadora da qual fazemos parte.",
+                    "imagem": "https://imgnike-a.akamaihd.net/250x250/022055P1.jpg"
+                }
+            ]
+        },
+        {
+            "verde": []
+        },
+        {
+            "roxo": []
+        }
+    ]
+}

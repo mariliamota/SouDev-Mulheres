@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+}
+
+.tabela{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8edeb;
+}
+
+.tabela table{
+    background-color: #d8e2dc;
+    padding: 16px;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+.tabela table thead{
+    background-color: #fec89a;
+    color: white;
+}
+
+.tabela table thead{
+    height: 46px;
+}
+.tabela table tbody td{
+    padding: 0 16px;
+    line-height: 40px;
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+.tabela table thead th:nth-child(even){ /* se colocar even seleciona os pares e odd seleciona os impares*/
+    background-color: #ffd7ba;
+}
