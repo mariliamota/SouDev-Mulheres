@@ -31,9 +31,9 @@ export default function Home() {
             <Container>
                 <Grid container spacing={3}>
                     {
-                        listaProdutos.map((cadaProduto) => {
+                        listaProdutos.map((cadaProduto, index) => {
                             return(
-                                <Grid item md={3}>
+                                <Grid key={index} item md={3}>
                                     <Produto 
                                         nome={cadaProduto.nome} 
                                         categoria={cadaProduto.categoria} 
