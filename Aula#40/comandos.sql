@@ -46,10 +46,17 @@ FROM -- para
 ON -- onde for igual
     tb_aluno.escola_id = tb_escola.id
 LIMIT 10;
-
+-- outra forma
 SELECT 
     tb_aluno.id, tb_aluno.nome, tb_escola.nome
 FROM
     tb_aluno
 INNER JOIN tb_escola ON tb_aluno.escola_id = tb_escola.id LIMIT 10;
+-- selecionar um aluno de cada escola --
+SELECT DISTINCT
+    tb_aluno.id, tb_aluno.nome, tb_escola.nome
+FROM 
+    tb_aluno
+INNER JOIN
+    tb_escola ON tb_aluno.escola_id = tb_escola.id GROUP BY tb_escola.id;
 ____________________________________________________________________________________________________
