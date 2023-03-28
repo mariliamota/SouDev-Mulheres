@@ -38,12 +38,18 @@ WHERE
 escola_id=12 OR escola_id=13 OR escola_id=17
 ____________________________________________________________________________________________________
 -- relacionamentos --
-SELECT 
-    tb_aluno.nome as aluno,
-    tb_escola.nome as escola
-FROM
+SELECT -- selecione
+    tb_aluno.nome as aluno, -- o as nesse caso é sinonimo de recebe
+    tb_escola.nome as escola -- o as nesse caso é sinonimo de recebe
+FROM -- para
     tb_aluno INNER JOIN tb_escola
-ON 
+ON -- onde for igual
     tb_aluno.escola_id = tb_escola.id
 LIMIT 10;
+
+SELECT 
+    tb_aluno.id, tb_aluno.nome, tb_escola.nome
+FROM
+    tb_aluno
+INNER JOIN tb_escola ON tb_aluno.escola_id = tb_escola.id LIMIT 10;
 ____________________________________________________________________________________________________
