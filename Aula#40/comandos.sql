@@ -37,3 +37,13 @@ escola_id=2
 WHERE
 escola_id=12 OR escola_id=13 OR escola_id=17
 ____________________________________________________________________________________________________
+-- relacionamentos --
+SELECT 
+    tb_aluno.nome as aluno,
+    tb_escola.nome as escola
+FROM
+    tb_aluno INNER JOIN tb_escola
+ON 
+    tb_aluno.escola_id = tb_escola.id
+LIMIT 10;
+____________________________________________________________________________________________________
