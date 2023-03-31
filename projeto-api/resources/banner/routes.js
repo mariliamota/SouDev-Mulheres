@@ -17,8 +17,13 @@ app.get('/banners/:id', async (req, res) => {
     res.send(dados[0]);
 });
 
+//adicionando um registro de banner
 app.post('/banners', async (req, res) => {
-    res.send('ok');
+    let corpo = req.body;
+    let sql = await database.execute(`INSERT INTO tb_banner (titulo, descricao, imagem) VALUES ('${corpo.titulo}', '${corpo.descricao}', '${corpo.imagem}')`);
+
+    corpo.id = sql.insertId;
+    res.send(corpo);
 });
 
 app.put('/banners/:id', async (req, res) => {
