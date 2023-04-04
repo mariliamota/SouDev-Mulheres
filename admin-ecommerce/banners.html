@@ -268,17 +268,21 @@
       <h5 id="offcanvasRightLabel">Criar</h5>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    
+
     <div class="offcanvas-body">
-      <form id="formCriar">
-        <div class="input-group input-group-outline mb-3">
+      <form id="formCriar" onsubmit="adicionar()">
+        <div class="input-group input-group-dynamic mb-3">
             <label for="titulo" class="form-label">Título</label>
-            <input type="text" name="titulo" id="titulo">
+            <input type="text" name="titulo" id="titulo" class="form-control">
         </div>
-        <div class="input-group input-group-outline">
+        <div class="input-group input-group-dynamic mb-3">
             <label for="descricao" class="form-label">Descrição</label>
             <textarea name="descricao" id="descricao" class="form-control"></textarea>
         </div>
+        <div class="input-group input-group-dynamic mb-3">
+            <input type="file" name="imagem" id="imagem">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Enviar</button>
       </form>
     </div>
   </div>
