@@ -32,7 +32,7 @@ app.get("/users/auth", async(req, res) => {
     let users = await database.execute(`
         SELECT * FROM tb_users 
         WHERE email = '${req.headers.email}';
-    `);
+    `)
 
     //se não for encontrado ninguem com esse email entao o usuário não existe
     if (!users[0]){
@@ -43,15 +43,12 @@ app.get("/users/auth", async(req, res) => {
     let senhaVerificada = await argon2.verify(users[0].senha, req.headers.senha);
 
     if (false === senhaVerificada) {
-        res.Status(400).send({erro: 'Senha Incorreta'});
-    }
-
-    if(users.length === 0){
-        res.send(JSON.stringify({"message": "Usuario ou senha invalido"}))
+        res.status(400).send({erro: 'Senha Incorreta'});
         return;
     }
 
-    res.send(JSON.stringify({"token": users[0].token}));
+    res.send(users[0]);
+
 });
 
 module.exports = app;

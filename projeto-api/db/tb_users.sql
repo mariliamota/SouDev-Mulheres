@@ -12,3 +12,6 @@ ADD COLUMN email VARCHAR(100);
 //modificando uma coluna da tabela
 ALTER TABLE tb_users
 MODIFY senha VARCHAR (255) NULL;
+
+//sim foi um DELETE sem WHERE
+ DELETE FROM tb_users;
