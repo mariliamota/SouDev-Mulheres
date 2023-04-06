@@ -11,4 +11,4 @@ ADD COLUMN email VARCHAR(100);
 
 //modificando uma coluna da tabela
 ALTER TABLE tb_users
-MODIFY token VARCHAR (50) NULL;
+MODIFY senha VARCHAR (255) NULL;
