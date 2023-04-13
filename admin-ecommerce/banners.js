@@ -1,7 +1,11 @@
-const { table } = require("console");
+// const { table } = require("console");
 
 function listarTodos(){
-    fetch('http://localhost:8000/banners')
+    fetch('http://localhost:8000/banners',{
+        headers: {
+            token: '4727'
+        }
+    })
         .then(res => res.json())
         .then(dados => {
             tabela_banners.innerHTML = "";
